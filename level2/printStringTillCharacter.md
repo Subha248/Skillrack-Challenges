@@ -1,3 +1,25 @@
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String S = scan.nextLine();
+        char C = scan.next().charAt(0);
+        
+        for (int i = 0; i < S.length(); i++) {
+            System.out.print(S.charAt(i));
+            if (S.charAt(i) == C) {
+                break;
+            }
+        }
+        
+        scan.close();
+    }
+}
+```
+
+
 ### **📌 Line-by-line Explanation of the Java Program**
 
 ```java
