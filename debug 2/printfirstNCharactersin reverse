@@ -1,0 +1,71 @@
+
+import java.util.Scanner;
+
+public class ReverseFirstN {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt(); // Read the integer input
+        sc.nextLine(); // Consume the newline character
+        String str = sc.nextLine(); // Read the string input
+
+        // Extract the first 'n' characters
+        String firstN = str.substring(0, n);
+
+        // Reverse using StringBuilder
+        StringBuilder sb = new StringBuilder(firstN);
+        String reversed = sb.reverse().toString();
+
+        // Print the reversed substring
+        System.out.println(reversed);
+
+        sc.close();
+    }
+}
+
+Explanation:
+
+1. Read Inputs:
+
+int n = sc.nextInt(); → Reads the integer input.
+
+sc.nextLine(); → Consumes the newline.
+
+String str = sc.nextLine(); → Reads the string.
+
+
+
+2. Extract First n Characters:
+
+String firstN = str.substring(0, n); → Gets the first n characters.
+
+
+
+3. Reverse the Substring:
+
+StringBuilder sb = new StringBuilder(firstN); → Creates a StringBuilder object.
+
+String reversed = sb.reverse().toString(); → Reverses and converts it back to a string.
+
+
+
+4. Print the Output:
+
+System.out.println(reversed);
+
+
+
+
+Example Input & Output:
+
+Input:
+
+3
+apple
+
+Output:
+
+ppa
+
+This version makes it easy to understand how StringBuilder is used separately for reversing.
+
