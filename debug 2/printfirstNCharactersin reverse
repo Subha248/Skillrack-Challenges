@@ -1,4 +1,4 @@
-
+```java
 import java.util.Scanner;
 
 public class ReverseFirstN {
@@ -22,7 +22,8 @@ public class ReverseFirstN {
         sc.close();
     }
 }
-
+```
+---
 Explanation:
 
 1. Read Inputs:
@@ -68,4 +69,4 @@ Output:
 ppa
 
 This version makes it easy to understand how StringBuilder is used separately for reversing.
-
+---
