@@ -1,0 +1,47 @@
+Here’s the **fill in the blanks** version of the code:
+
+```java
+import java.util.Scanner;
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = ____________; // Fill in the blank
+
+        int N = sc.nextInt();
+
+        System.out.print( ____________ ); // Fill in the blank
+    }
+}
+```
+
+### **Correct Fill-in-the-Blanks:**
+1. **First blank:**  
+   ```java
+   sc.nextLine();
+   ```
+   - This reads the string input from the user.
+
+2. **Second blank:**  
+   ```java
+   str.repeat(N)
+   ```
+   - This repeats the string `N` times.
+
+### **Final Code with Blanks Filled:**
+```java
+import java.util.Scanner;
+
+public class Hello {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine(); // Read the string input
+
+        int N = sc.nextInt();
+
+        System.out.print(str.repeat(N)); // Print the string N times
+    }
+}
+```
+
+This solution correctly prints the string `N` times without spaces. ✅
